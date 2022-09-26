@@ -23,10 +23,10 @@ keymap("n", "<C-i>", "<C-i>", opts)
 
 -- Normal --
 -- Better window navigation
-keymap("n", "<m-h>", "<C-w>h", opts)
+keymap("n", "<c-h>", "<C-w>h", opts)
 keymap("n", "<m-j>", "<C-w>j", opts)
 keymap("n", "<m-k>", "<C-w>k", opts)
-keymap("n", "<m-l>", "<C-w>l", opts)
+keymap("n", "<c-l>", "<C-w>l", opts)
 keymap("n", "<m-tab>", "<c-6>", opts)
 
 -- Tabs --
@@ -65,7 +65,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
--- keymap("i", "jk", "<ESC>", opts)
+keymap("i", "jj", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -199,6 +199,6 @@ vim.cmd [[
 ]]
 
 keymap("n", "<m-q>", ":call QuickFixToggle()<cr>", opts)
-keymap("n", "<c-l>", "<cmd>lua vim.lsp.codelens.run()<cr>", opts)
+-- keymap("n", "<c-l>", "<cmd>lua vim.lsp.codelens.run()<cr>", opts)
 
 return M
